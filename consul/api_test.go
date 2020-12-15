@@ -6,7 +6,7 @@ import (
 
 func TestPutKey(t *testing.T) {
 	value := []byte("testingvalue")
-	key := "testingkey"
+	key := "consulfstest/testingkey"
 	err := Upload(key, value)
 	if err != nil {
 		t.Fatal(err)
